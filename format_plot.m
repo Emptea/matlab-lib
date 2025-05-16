@@ -11,8 +11,8 @@ axis tight;
 if (isempty(plotname))
     title(plotname, 'FontSize', fontSize);
 end
-xlabel(xname, 'FontSize', fontSize);
-ylabel(yname, 'FontSize', fontSize);
+xlabel(xname,'Interpreter', 'latex', 'FontSize', fontSize);
+ylabel(yname, 'Interpreter', 'latex','FontSize', fontSize);
 
 set(gca, 'FontSize', fontSize); % Устанавливаем размер шрифта для осей
 grid on; % Включаем сетку (по желанию)
